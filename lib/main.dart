@@ -142,6 +142,10 @@ class _QuizPageState extends State<QuizPage> {
               backgroundColor: Colors.purple,
               progressColor: Colors.yellow,
               center: Text(
+                // you can also write this
+//                quizBrain.isFinished()
+//                    ? '${quizBrain.totalQuestions}/${quizBrain.totalQuestions}'
+//                    : '${quizBrain.questionNumber + 1}/${quizBrain.totalQuestions}',
                 quizBrain.isFinished()
                     ? quizBrain.totalQuestions.toString() +
                         '/' +
